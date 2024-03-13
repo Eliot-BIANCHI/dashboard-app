@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard App</title>
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/static/favicons/dashboard-dark-mode.svg"
+        media="(prefers-color-scheme: dark)">
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/static/favicons/dashboard-light-mode.svg"
+        media="(prefers-color-scheme: light)">
+
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <link rel="stylesheet" href="/static/styles/normalize.css">
+
+    <script src="/static/scripts/App.js" type="module"></script>
 </head>
 <body>
     
-    <h1>Hello World</h1>
+    <app-navbar></app-navbar>
+
+    <div id="app"></div>
 
 </body>
 </html>

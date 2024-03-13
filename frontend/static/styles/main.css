@@ -1,0 +1,28 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #B6B6B6;
+    --text-secondary: #ECECEC;
+    --bg-primary: #23232E;
+    --bg-secondary: #141418;
+}
+
+body {
+    color: black;
+    background-color: white;
+}
+
+#app {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+@media only screen and (width < 600px) {
+    #app {
+        margin-left: 0rem;
+    }
+}

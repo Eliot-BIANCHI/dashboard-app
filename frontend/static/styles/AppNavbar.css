@@ -1,0 +1,120 @@
+.app-navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    overflow: scroll;
+    transition: width 600ms ease;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+
+    /* &:last-child { margin-top: auto; } */
+}
+
+.nav-link {
+    display: flex;
+        align-items: center;
+    color: var(--text-primary);
+    height: 5rem;
+    text-decoration: none;
+    transition: var(--transition-speed);
+
+    &:hover {
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
+    }
+
+    .link-icon {
+        width: 2rem;
+        min-width: 2rem;
+        margin: 0 1.25rem;
+    }
+    
+    .link-text {
+        display: none;
+        margin-left: 1rem;
+    }
+      
+}
+
+.logo {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+
+    .logo-icon {
+        transition: rotate 200ms ease;
+    }
+      
+    .logo-text {
+        display: inline;
+        position: absolute;
+        left: -999px;
+        transition: 200ms;
+    }
+}
+  
+
+  
+.navbar:hover .logo {
+    rotate: -180deg;
+}
+  
+@media only screen and (width < 600px) {
+    .app-navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+  
+    .logo {
+        display: none;
+    }
+  
+    .nav-list {
+        flex-direction: row;
+    }
+  
+    .nav-link {
+        justify-content: center;
+    }
+}
+  
+@media only screen and (width > 600px) {
+    .app-navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+  
+    .app-navbar:hover {
+        width: 16rem;
+    }
+  
+    .app-navbar:hover .link-text {
+        display: inline;
+    }
+  
+    .app-navbar:hover .logo-icon {
+        margin-left: 11rem;
+    }
+  
+    .app-navbar:hover .logo-text {
+        left: 0px;
+    }
+}
