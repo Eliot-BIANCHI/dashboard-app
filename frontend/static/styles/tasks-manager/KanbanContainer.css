@@ -1,0 +1,16 @@
+:host {
+    background-color: darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container-tasks {
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
+}

@@ -1,0 +1,11 @@
+:host {
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+    padding: 1rem;
+    transition: transform 200ms ease-in;
+
+    &.dragging {
+        opacity: 0.5;
+    }
+}

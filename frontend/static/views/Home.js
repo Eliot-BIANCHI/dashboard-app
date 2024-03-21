@@ -1,7 +1,7 @@
 export default class HomeView {
     constructor(params) {
         document.title = 'Home'
-        console.log(params)
+        this.params = params
     }
 
     async getHTML() {

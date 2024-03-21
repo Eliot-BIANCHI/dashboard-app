@@ -1,0 +1,12 @@
+.kanban-containers {
+    display: flex;
+        gap: 30px;
+}
+
+kanban-task.dragging {
+    opacity: 0.5;
+
+    & ~ kanban-task {
+        transform: translateY(5px);
+    }
+}

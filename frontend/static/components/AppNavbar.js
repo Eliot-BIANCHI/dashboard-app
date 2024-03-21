@@ -19,14 +19,14 @@ export default class AppNavbar extends HTMLElement {
                     </li>
 
                     <li class="nav-item">
-                        <a href="/scheduler/2" class="nav-link" data-link="app">
+                        <a href="/scheduler" class="nav-link" data-link="app">
                             <icon-scheduler class="link-icon"></icon-scheduler>
                             <span class="link-text">Scheduler</span>
                         </a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="/tasks-manager" class="nav-link" data-link="app">
+                        <a href="/tasks-manager/1" class="nav-link" data-link="app">
                             <icon-tasks-manager class="link-icon"></icon-tasks-manager>
                             <span class="link-text">Tasks</span>
                         </a>

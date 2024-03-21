@@ -1,7 +1,7 @@
 export default class NotFoundView {
     constructor(params) {
         document.title = 'Not found'
-        console.log(params)
+        this.params = params
     }
 
     async getHTML() {

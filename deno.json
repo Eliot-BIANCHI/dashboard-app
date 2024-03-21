@@ -1,5 +1,6 @@
 {
     "tasks": {
-        "dev": "deno run --watch --allow-read --allow-env --allow-net server.ts"
+        "dev": "deno run --watch --allow-read --allow-env --allow-net server.ts",
+        "db:populate": "deno run --allow-read --allow-env --allow-net database/populate.ts"
     }
 }

@@ -1,10 +1,16 @@
+import Http from '../http/Http.js'
+
 export default class TasksManagerView {
     constructor(params) {
         document.title = 'Tasks manager'
-        console.log(params)
+        this.id = params.id
     }
 
     async getHTML() {
-        return '<h1>Tasks Manager View</h1>'
+        const tasks = await Http.get(`/api/tasks-manager/${this.id}`, { parseAs: 'text' })
+
+        return `
+            <kanban-board tasks='${tasks}'></kanban-board>
+        `
     }
 }

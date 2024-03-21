@@ -1,7 +1,7 @@
 export default class SchedulerView {
     constructor(params) {
         document.title = 'Scheduler'
-        console.log(params)
+        this.params = params
     }
 
     async getHTML() {

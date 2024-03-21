@@ -20,8 +20,8 @@ export default class Router {
 
         const routes = [
             { path: '/', view: Home },
-            { path: '/scheduler/:id', view: Scheduler },
-            { path: '/tasks-manager', view: TasksManager },
+            { path: '/scheduler', view: Scheduler },
+            { path: '/tasks-manager/:id', view: TasksManager },
             { path: '/not-found', view: NotFound }
         ]
 
